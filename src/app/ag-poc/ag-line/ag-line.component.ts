@@ -49,6 +49,9 @@ export class AgLineComponent {
         xKey: "quarter",
         yKey: "petrol",
         yName: "Petrol",
+        label: {
+          formatter: ({ value }) => value.toString(0),
+        },
       },
       {
         type: "line",

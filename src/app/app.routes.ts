@@ -19,12 +19,14 @@ import { EchartsComponent } from './routes/echarts/echarts.component';
 import { D3Component } from './d3/d3.component';
 import { HighchartsPocComponent } from './highcharts-poc/highcharts-poc.component';
 import { AgPocComponent } from './ag-poc/ag-poc.component';
+import { AgChartsInAppComponent } from './ag-charts-in-app/ag-charts-in-app.component';
 
 export const routes: Routes = [
   { path: 'ag', component: AgComponent },
-  { path: 'highcharts', component: HighchartsComponent },
-  { path: 'highcharts-poc', component: HighchartsPocComponent },
+  // { path: 'highcharts', component: HighchartsComponent },
+  // { path: 'highcharts-poc', component: HighchartsPocComponent },
   { path: 'ag-poc', component: AgPocComponent },
+  { path: 'ag-charts-in-app', component: AgChartsInAppComponent },
   // { path: 'amcharts', component: AmchartsComponent },
   // { path: 'apache', component: ApacheComponent },
   // { path: 'apex', component: ApexComponent },

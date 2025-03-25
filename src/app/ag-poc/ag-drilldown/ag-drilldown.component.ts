@@ -54,13 +54,6 @@ export class AgDrilldownComponent {
         lineDash: [2, 0],
         showInLegend: true,
         type: 'bar',
-        itemStyler: ({ datum, xKey, fill }) => {
-          return {
-              fill: datum[xKey] === 'B' ? 'red': fill,
-              strokeWidth: 0,
-              
-          };
-      },
         xKey: 'category',
         yKey: 'value',
         label: {
