@@ -31,7 +31,7 @@ export class AgDonutComponent {
         type: "donut",
         calloutLabelKey: "asset",
         angleKey: "amount",
-        innerRadiusRatio: 0.9,
+        innerRadiusRatio: .9,
         innerLabels: [
           {
             text: "$100,000",
