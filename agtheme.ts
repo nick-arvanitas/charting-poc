@@ -46,11 +46,33 @@ const baseTheme: AgChartTheme = {
             legend: {
                 spacing: 16
             },
-            
+        },
+        bar: {
+            series: {
+                highlightStyle: {
+                    item: {
+                        strokeWidth: 0
+                    }
+                }
+            }
         },
         donut: {
             series: {
                 innerRadiusRatio: .85,
+                highlightStyle: {
+                    item: {
+                        strokeWidth: 0
+                    }
+                }
+            }
+        },
+        'radial-bar': {
+            series: {
+                highlightStyle: {
+                    item: {
+                        strokeWidth: 0
+                    }
+                }
             }
         }
     }
