@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AgCharts } from 'ag-charts-angular';
-import { AgChartOptions, AgDonutSeriesOptions } from 'ag-charts-enterprise';
+import { AgChartOptions, AgDonutSeriesOptions, AgPolarChartOptions } from 'ag-charts-enterprise';
+import { createSequentialNegativeTheme } from '../../../../agtheme';
 
 @Component({
   selector: 'ag-donut',
@@ -12,7 +13,7 @@ import { AgChartOptions, AgDonutSeriesOptions } from 'ag-charts-enterprise';
   `,
 })
 export class AgDonutComponent {
-  options: AgChartOptions = {
+  options: AgPolarChartOptions = {
     data: [
       { asset: "Stocks", amount: 60000 },
       { asset: "Bonds", amount: 40000 },
@@ -20,6 +21,7 @@ export class AgDonutComponent {
       { asset: "Real Estate", amount: 5000 },
       { asset: "Commodities", amount: 3000 },
     ],
+    theme: createSequentialNegativeTheme(5),
     padding: {
       left: 0,
       right: 0,
@@ -31,7 +33,7 @@ export class AgDonutComponent {
         type: "donut",
         calloutLabelKey: "asset",
         angleKey: "amount",
-        innerRadiusRatio: .9,
+        innerRadiusRatio: .7,
         innerLabels: [
           {
             text: "$100,000",

@@ -8,3 +8,90 @@
     --color-avocado-500: oklch(0.84 0.18 117.33);
     --color-avocado-600: #323112;
   }
+
+.p-datatable {
+  font-size: 14px;
+  box-shadow: 0px 0px 0px 1px var(--p-forge-300);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.p-datatable .p-datatable-tbody > tr > td:first-of-type {
+  padding-left: 0.875rem !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td:last-of-type {
+  padding-right: 0.875rem !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:last-of-type > td {
+  border-bottom-width: 0px;
+}
+
+.p-datatable .p-datatable-thead > tr > th:first-of-type {
+  padding-left: 0.875rem !important;
+  border-top-left-radius: 8px;
+}
+
+.p-datatable .p-datatable-thead > tr > th:last-of-type {
+  padding-right: 0.875rem !important;
+  border-top-right-radius: 8px;
+}
+
+.p-dialog .p-dialog-title {
+  line-height: 1.75rem;
+}
+
+.p-dialog .p-dialog-header-actions {
+  display: grid;
+  place-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.p-dialog .p-dialog-content:not(:has(+ .p-dialog-footer)) {
+  padding-bottom: 1rem;
+}
+
+.p-inputtext-lg {
+  line-height: 1.625rem;
+}
+
+.p-inputtext-sm {
+  line-height: 1.125rem;
+}
+
+.p-drawer-title {
+  line-height: 2rem;
+}
+
+.p-drawer-title ~ p-button {
+  display: grid;
+  place-content: flex-end;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.p-drawer-footer {
+  padding: 1rem 2.5rem 2rem !important;
+}
+
+.p-datatable-column-resizer {
+  position: relative;
+  width: 8px !important;
+  cursor: col-resize;
+  background: transparent;
+}
+
+.p-datatable-column-resizer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: var(--p-forge-300);
+}
+

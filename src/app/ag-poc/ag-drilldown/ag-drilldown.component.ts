@@ -7,11 +7,13 @@ import { AgCharts } from "ag-charts-angular";
   selector: 'ag-drilldown',
   imports: [AgCharts],
   template: `
-  @if (isDrilldown) {
-    <button (click)="goBack()">Back</button>
-  }
-
-<ag-charts [options]="options" class="block h-[400px] w-full"></ag-charts>
+  <div class="relative">
+    @if (isDrilldown) {
+      <button class="absolute top-[-60px] right-0 border border-black rounded-md p-2 z-[1] cursor-pointer" (click)="goBack()">Back</button>
+    }
+  
+  <ag-charts [options]="options" class="block h-[400px] w-full"></ag-charts>
+  </div>
   `,
 })
 export class AgDrilldownComponent {

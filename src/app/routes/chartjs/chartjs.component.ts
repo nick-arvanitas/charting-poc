@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-chartjs',
-  template: `
-    <p>
-      chartjs works!
-    </p>
-  `
-})
-export class ChartjsComponent {
+// @Component({
+//   selector: 'app-chartjs',
+//   template: `
+//     <p>
+//       chartjs works!
+//     </p>
+//   `
+// })
+// export class ChartjsComponent {
 
-}
+// }

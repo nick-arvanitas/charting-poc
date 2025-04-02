@@ -123,6 +123,9 @@ export class IncidentRateComponent {
         keys: ["incidentRate"],
         min: 0,
         max: 1,
+        label: {
+          formatter: (params) => params.value.toFixed(1)
+        }
       },
       {
         type: "number",

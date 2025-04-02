@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AgCharts } from 'ag-charts-angular';
 import { AgChartOptions } from 'ag-charts-enterprise';
+import { createSequentialBlueTheme, createSequentialNegativeTheme } from '../../../../agtheme';
 
 @Component({
   selector: 'ag-bar',
@@ -14,6 +15,7 @@ import { AgChartOptions } from 'ag-charts-enterprise';
 export class AgBarComponent {
   
   options: AgChartOptions = {
+    theme: createSequentialNegativeTheme(3),
     legend: {
       enabled: false,
     },
